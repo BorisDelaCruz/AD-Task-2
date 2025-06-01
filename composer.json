@@ -1,0 +1,20 @@
+{
+    "name": "h1h3/ad-task-2",
+    "description": "A wiki that explains why bulbasaur is the best.",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "H1H3\\AdTask2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Boris Dela Cruz",
+            "email": "202311499@fit.edu.ph"
+        }
+    ],
+    "scripts": {
+        "start": "php -S localhost:8000"
+    },
+    "require": {}
+}
