@@ -1,3 +1,47 @@
+<?php
+function bulbasaurMovesButton() {
+    $moves = [
+        "Tackle",
+        "Growl",
+        "Leech Seed",
+        "Vine Whip",
+        "Poison Powder",
+        "Sleep Powder",
+        "Take Down",
+        "Razor Leaf",
+        "Sweet Scent",
+        "Growth",
+        "Double-Edge",
+        "Worry Seed",
+        "Synthesis",
+        "Seed Bomb",
+        "Solar Beam",
+        "Sludge Bomb",
+        "Energy Ball",
+        "Grass Knot"
+    ];
+
+    echo '
+    <div class="bulba-moves-section">
+        <button id="bulba-moves-btn" class="poke-btn" type="button">Show Random Bulbasaur Move</button>
+        <div id="bulba-moves-list" class="bulba-moves-list"></div>
+        <script>
+            window.bulbaMoves = ' . json_encode($moves) . ';
+        </script>
+    </div>
+    ';
+}
+
+function bulbasaurSoundButton() {
+    echo '
+    <div class="bulba-sound-section">
+        <button id="bulba-sound-btn" class="poke-btn" type="button">Play Bulbasaur Sound</button>
+        <audio id="bulba-audio" src="assets/audio/bulbasaur.mp3"></audio>
+    </div>
+    ';
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +54,12 @@
 
 <?php require_once __DIR__ . '/components/leaves.php'; ?>
 
-<div class="container">
 
+<?php bulbasaurMovesButton(); ?>
+<?php bulbasaurSoundButton(); ?>
+
+
+<div class="container">
     <p>
         Bulbasaur isn’t just adorable—it’s the most strategic choice for any new Pokémon Trainer in Kanto! With its unique Grass/Poison typing, Bulbasaur has a clear advantage against the first two Gyms, making early-game progression much smoother. Its access to status moves like Sleep Powder and Leech Seed gives it incredible versatility, and its balanced stats make it a reliable companion throughout your journey.
     </p>
@@ -51,5 +99,7 @@
 </div>
 
 <?php require_once __DIR__ . '/components/footer.php'; ?>
+<script src="assets/js/script.js"></script>
+
 </body>
 </html>
