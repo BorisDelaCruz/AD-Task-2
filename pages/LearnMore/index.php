@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
-    <?php require_once __DIR__ . '/../../components/leaves.php'; ?>
     <div class="container">
-        <h1>Why Bulbasaur is the Best Starter Compared to Others</h1>
+        <h1>Learn More About Bulbasaur</h1>
         <p>
             Bulbasaur stands out among all starter Pokémon, not just in Gen 1 but when compared to the starters of every generation. Here’s why Bulbasaur is a top pick:
         </p>
@@ -35,7 +34,56 @@
                 While every starter Pokémon has its strengths, Bulbasaur’s combination of early-game advantages, versatile movepool, and strong evolutions make it the best choice for new and experienced trainers alike—no matter which generation you compare!
             </p>
         </div>
+        <div class="facts-section-with-bulba">
+            <div class="gen-section">
+                <h2>Fun Facts About Bulbasaur</h2>
+                <div class="facts-grid">
+                    <div class="bulba-card">
+                        <strong>#001 in the National Pokédex</strong><br>
+                        Bulbasaur is the very first Pokémon listed in the Pokédex!
+                    </div>
+                    <div class="bulba-card">
+                        <strong>Unique Typing</strong><br>
+                        The only Gen 1 starter with dual Grass/Poison typing.
+                    </div>
+                    <div class="bulba-card">
+                        <strong>Signature Bulb</strong><br>
+                        The plant bulb on its back grows into a flower as it evolves.
+                    </div>
+                    <div class="bulba-card">
+                        <strong>Versatile Moves</strong><br>
+                        Learns both status and healing moves early, making it great for new trainers.
+                    </div>
+                    <div class="bulba-card">
+                        <strong>Evolution</strong><br>
+                        Evolves into Ivysaur at level 16 and Venusaur at level 32.
+                    </div>
+                    <div class="bulba-card">
+                        <strong>Anime Star</strong><br>
+                        Ash’s Bulbasaur famously refused to evolve, showing loyalty and strength.
+                    </div>
+                    <div class="bulba-card">
+                        <strong>Solar Beam</strong><br>
+                        Can perform one of the most powerful Grass-type attacks.
+                    </div>
+                    <div class="bulba-card">
+                        <strong>Name Origin</strong><br>
+                        “Bulb” (plant bulb) + “saur” (Greek for lizard).
+                    </div>
+                    <div class="bulba-card">
+                        <strong>Design</strong><br>
+                        Based on a toad or dinosaur with a plant bulb on its back.
+                    </div>
+                    <div class="bulba-card">
+                        <strong>Egg Groups</strong><br>
+                        Can breed with both Grass and Monster Egg Groups.
+                    </div>
+                </div>
+            </div>
+        </div>
         <a href="../../index.php" class="poke-btn">Back to Home</a>
     </div>
+    
+    <?php require_once __DIR__ . '/../../components/footer.php'; ?>
 </body>
 </html>
