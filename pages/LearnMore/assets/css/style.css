@@ -126,3 +126,33 @@ footer {
         opacity: 0.5;
     }
 }
+.bulba-dictionary dt {
+    font-weight: bold;
+    color: #388e3c;
+    margin-top: 1rem;
+}
+.bulba-dictionary dd {
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.dictionary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+.dictionary-card {
+    background: #e0f7e9;
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px rgba(56,142,60,0.08);
+    padding: 1.2rem 1rem;
+    text-align: left;
+    font-size: 1rem;
+}
+.dictionary-card strong {
+    color: #388e3c;
+    font-size: 1.08em;
+}
+.dictionary-desc {
+    margin-top: 0.5rem;
+}

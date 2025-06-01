@@ -81,9 +81,52 @@
                 </div>
             </div>
         </div>
+        <?php
+
+$pokemon_terms = [
+    "Starter Pokémon" => "A Pokémon given to trainers at the beginning of their journey.",
+    "Type Advantage" => "When a Pokémon’s type is strong against another, dealing more damage.",
+    "STAB" => "Same Type Attack Bonus; a move gets a power boost if it matches the user's type.",
+    "Evolution" => "The process by which a Pokémon transforms into a different species, usually becoming stronger.",
+    "Egg Group" => "Categories for Pokémon breeding; determines which Pokémon can breed together.",
+    "Move Pool" => "The set of moves a Pokémon can learn by leveling up, TM/HM, or breeding.",
+    "Status Move" => "A move that causes effects like sleep, paralysis, or stat changes instead of direct damage.",
+    "HP" => "Hit Points; the amount of health a Pokémon has.",
+    "Stat" => "Numerical values that determine a Pokémon’s power, speed, defense, etc.",
+    "Pokédex" => "An electronic encyclopedia that records information about Pokémon species.",
+    "Legendary Pokémon" => "Rare and powerful Pokémon that are typically unique and cannot breed.",
+    "TM/HM" => "Technical Machine/Hidden Machine; items used to teach Pokémon new moves.",
+    "Wild Pokémon" => "Pokémon that are not owned by a trainer and can be encountered in the wild.",
+    "Trainer" => "A person who catches, trains, and battles with Pokémon."
+];
+
+
+echo "<p><strong>Definition of 'STAB':</strong> " . htmlspecialchars($pokemon_terms["STAB"]) . "</p>";
+
+$pokemon_terms["Shiny Pokémon"] = "A rare Pokémon with alternate coloration.";
+
+
+$pokemon_terms["Egg Group"] = "A classification for Pokémon breeding compatibility.";
+
+
+unset($pokemon_terms["Stat"]);
+
+
+echo '<div class="gen-section">';
+echo '<h2>Pokémon Terms Dictionary</h2>';
+echo '<div class="dictionary-grid">';
+foreach ($pokemon_terms as $term => $desc) {
+    echo '<div class="dictionary-card">';
+    echo '<strong>' . htmlspecialchars($term) . '</strong>';
+    echo '<div class="dictionary-desc">' . htmlspecialchars($desc) . '</div>';
+    echo '</div>';
+}
+echo '</div>';
+echo '</div>';
+?>
         <a href="../../index.php" class="poke-btn">Back to Home</a>
     </div>
-    
+
     <?php require_once __DIR__ . '/../../components/footer.php'; ?>
 </body>
 </html>
